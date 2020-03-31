@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web", "Web\Web.csproj", "{23CE07EE-174A-47C2-9060-CB8462FF75FF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CryptoCore", "CryptoCore\CryptoCore.csproj", "{E709BA57-8410-4DDE-B926-E4C31C592270}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23CE07EE-174A-47C2-9060-CB8462FF75FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23CE07EE-174A-47C2-9060-CB8462FF75FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23CE07EE-174A-47C2-9060-CB8462FF75FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23CE07EE-174A-47C2-9060-CB8462FF75FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E709BA57-8410-4DDE-B926-E4C31C592270}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E709BA57-8410-4DDE-B926-E4C31C592270}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E709BA57-8410-4DDE-B926-E4C31C592270}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E709BA57-8410-4DDE-B926-E4C31C592270}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7FC75B9-03A8-4FE0-91CD-E1DF2538F857}
+	EndGlobalSection
+EndGlobal
