@@ -3,10 +3,12 @@
 > This project focus on implement encrypt & decrypt mechanism.  
 
 > 練習實作加解密機制於 .NET Core 3.1 上。  
+
 To practice how encrypt & decrypt mechanism implement on .NET Core 3.1.  
 
-> :exclamation: 此範例從 secretsettings.json 取得 key 和 salt 是**不安全**的。 :exclamation:  
-:exclamation: This example get key & salt from secretsettings.json **isn't secure**. :exclamation:  
+> :exclamation: 此範例從 secretsettings.json 取得 key 和 salt 是**不安全**的。  
+
+:exclamation: This example get key & salt from secretsettings.json **isn't secure**.  
 
 ## 運行專案
 > 假如你想要直接測試應用程式，可以使用 [Postman](https://www.getpostman.com/) 或其他一些用於模擬 Client-side 行為的應用程式。  
@@ -65,7 +67,7 @@ returns the following encrypted response:
 ```
 
 > 製作另一個如下所示之 POST 要求   
-3. Then make another a POST request like the following:
+4. Then make another a POST request like the following:
 
 ```
     POST https://localhost:5001/decrypt HTTP/1.1
@@ -101,4 +103,4 @@ returns the following decrypted response:
 
 ## 參考文章
 * English
-  * [Hiding Secrets in appsettings.json – Using a Bridge in your ASP.Net Core Configuration (Part 4)](https://stevetalkscode.co.uk/configuration-bridging-part-4)   
+  * [Hiding Secrets in appsettings.json – Using a Bridge in your ASP.Net Core Configuration (Part 4)](https://stevetalkscode.co.uk/configuration-bridging-part-4) 
