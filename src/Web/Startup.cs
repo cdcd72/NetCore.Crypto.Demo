@@ -27,14 +27,15 @@ namespace Web
 
             services.Configure<DbSettings>(Configuration.GetSection("DbSettings"));
 
+            services.AddSingleton<ISettingsValidator, SettingsValidator>();
+
             // !!! In a real implementation, you would have a factory here to get the password and salt securely <--- 
             // from somewhere such as Azure Key Vault, Environmental variable / another json setting (obfuscated in some way)
             // https://yanchi-huang.blogspot.com/2014/03/using-net-salting-your-password.html?m=0 about salt
-            services.AddSingleton(x => new CryptoFactory().Create<AesManaged>(Configuration.GetSection("CryptoSettings:Key").Value, Configuration.GetSection("CryptoSettings:Salt").Value));
+            services.AddScoped(x => new CryptoFactory().Create<AesManaged>(Configuration.GetSection("CryptoSettings:Key").Value, Configuration.GetSection("CryptoSettings:Salt").Value));
                                                                                               // ↑ bad example, because of password and salt get from file(ex. JSON, XML....)
-            services.AddSingleton<IEncryptor, Encryptor>();
-            services.AddSingleton<IDecryptor, Decryptor>();
-            services.AddSingleton<ISettingsValidator, SettingsValidator>();
+            services.AddScoped<IEncryptor, Encryptor>();
+            services.AddScoped<IDecryptor, Decryptor>();
             services.AddScoped<IDbSettingsResolved, DbSettingsBridge>();
 
             #endregion
